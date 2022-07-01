@@ -25,24 +25,20 @@ main{
   align-items: center;
   gap: 1em;
 }
-.imgs,img{
-  outline: 1px solid #FFFFFF;
-}
 .imgs{
-  width: 30em;
-  height: 45em;
+  width: 25em;
+  height: 40em;
 
   background-color: #523b78;
 
   border-radius: 25px;
-  outline: 1px solid #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 img {
-  width: 25em;
-  height: 40em;
+  width: 20em;
+  height: 35em;
   border: none;
   border-radius: 25px;
 }
@@ -60,11 +56,23 @@ button:active{
 .data{
   background-color: hsla(0,0%,0%, 0.6);
   position: absolute;
-  top: 55%;
+  top: 58%;
   right:50%; 
-  width: 12em;
-  height: 10em;
+
+  width:9em;
+  height: 6em;
+
+  padding-block: 10px;
   border-radius:25px;
-  text-align: center;
+
+  display: flex;
+  flex-flow: column;
+  gap:0.5em;
+  align-items: center
+
 }
+h3{
+  font-size: 12px;
+}
+
 

@@ -1,4 +1,4 @@
-showFollowersInHtml()
+// showFollowersInHtml()
 
 showImgInHtml()
 
