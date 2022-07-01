@@ -1,9 +1,11 @@
+
 function showImgInHtml() {
+  let userName = prompt(`Digite seu username Github`)
   Promise.all([
-    axios.get("https://api.github.com/users/henriquesabonare"),
-    axios.get('https://api.github.com/users/henriquesabonare/followers'),
-    axios.get('https://api.github.com/users/henriquesabonare/following'),
-    axios.get('https://api.github.com/users/henriquesabonare/repos')
+    axios.get(`https://api.github.com/users/${userName}`),
+    axios.get(`https://api.github.com/users/${userName}/followers`),
+    axios.get(`https://api.github.com/users/${userName}/following`),
+    axios.get(`https://api.github.com/users/${userName}/repos`)
   ])
   
     .then((res) => {
@@ -49,12 +51,12 @@ function showImgInHtml() {
         dados.appendChild(h3)
         return h3.textContent = `${location}`
       }
-      showImg()
-      showFollowers()
-      showFollowing()
-      showRepos()
-      showCompany()
-      showLocation()
+      showImg(userName)
+      showFollowers(userName)
+      showFollowing(userName)
+      showRepos(userName)
+      showCompany(userName)
+      showLocation(userName)
     })
     .catch((error) => console.log(error));
 }
